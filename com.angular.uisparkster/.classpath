@@ -14,6 +14,7 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
+			<attribute name="module" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
@@ -22,6 +23,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/vedvyas.pb/Downloads/sikuli-script.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhijit.patel/Documents/My Received Files/sikuli-script.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
