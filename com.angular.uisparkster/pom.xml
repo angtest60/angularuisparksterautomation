@@ -120,6 +120,30 @@
 </dependency>
     
     
+<!-- https://mvnrepository.com/artifact/org.sikuli/sikuli-api -->
+<dependency>
+    <groupId>org.sikuli</groupId>
+    <artifactId>sikuli-api</artifactId>
+    <version>1.2.0</version>
+</dependency>
+
+<dependency>
+    <groupId>com.sikulix</groupId>
+    <artifactId>sikulixapi</artifactId>
+    <version>1.1.0</version>
+</dependency>
+
+    
+
+
+<!-- https://mvnrepository.com/artifact/org.sikuli/sikuli-webdriver -->
+<dependency>
+    <groupId>org.sikuli</groupId>
+    <artifactId>sikuli-webdriver</artifactId>
+    <version>1.0.1</version>
+</dependency>
+
+    
     
   </dependencies>
 </project>
