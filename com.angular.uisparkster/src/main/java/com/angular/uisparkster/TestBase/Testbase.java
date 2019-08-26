@@ -46,11 +46,11 @@ public class Testbase {
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equalsIgnoreCase("chrome")){
-			System.setProperty("webdriver.chrome.driver", "");	
+			System.setProperty("webdriver.chrome.driver", "./com.angular.uisparkster/Webdriver/chromedriver.exe");	
 			driver = new ChromeDriver(); 
 		}
 		else if(browserName.equalsIgnoreCase("FireFox")){
-			System.setProperty("webdriver.gecko.driver", "");	
+			System.setProperty("webdriver.gecko.driver", "./com.angular.uisparkster/Webdriver/geckodriver.exe");	
 			driver = new FirefoxDriver(); 
       			driver = new FirefoxDriver(); 
 		}
