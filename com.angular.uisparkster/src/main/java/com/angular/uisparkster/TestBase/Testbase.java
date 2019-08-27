@@ -30,7 +30,7 @@ public class Testbase {
 	public Testbase() {
 		
 		try {
-			File file =new File("C:\\Users\\vedvyas.pb\\git\\angularuisparksterautomation\\com.angular.uisparkster\\src\\main\\java\\com\\angular\\uisparkster\\config\\config.properties");
+			File file =new File("./com.angular.uisparkster/src/main/java/com/angular/uisparkster/config/config.properties");
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(file);
 			prop.load(ip);
@@ -43,6 +43,7 @@ public class Testbase {
 	
 
 	public static void initialization(){
+		
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equalsIgnoreCase("chrome")){
