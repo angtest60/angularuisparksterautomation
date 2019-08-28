@@ -30,7 +30,9 @@ public class Testbase {
 	public Testbase() {
 		
 		try {
-			File file =new File("./com.angular.uisparkster/src/main/java/com/angular/uisparkster/config/config.properties");
+			//File file =new File("C:\\Users\\vedvyas.pb\\git\\angularuisparksterautomation\\com.angular.uisparkster\\src\\main\\java\\com\\angular\\uisparkster\\config\\config.properties");
+			
+			File file =new File(System.getProperty("user.dir")+"\\src\\main\\java\\com\\angular\\uisparkster\\config\\config.properties");
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(file);
 			prop.load(ip);
@@ -46,8 +48,10 @@ public class Testbase {
 		
 		String browserName = prop.getProperty("browser");
 		
+		
+		
 		if(browserName.equalsIgnoreCase("chrome")){
-			System.setProperty("webdriver.chrome.driver", "./com.angular.uisparkster/Webdriver/chromedriver.exe");	
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\Webdriver\\chromedriver.exe");	
 			driver = new ChromeDriver(); 
 		}
 		else if(browserName.equalsIgnoreCase("FireFox")){
@@ -55,8 +59,11 @@ public class Testbase {
 			driver = new FirefoxDriver(); 
       			driver = new FirefoxDriver(); 
 		}
-	
-	
+		
+		 
+		
+		
+		
 		e_driver = new EventFiringWebDriver(driver);
 		
 		eventListener = new WebEventListener();
