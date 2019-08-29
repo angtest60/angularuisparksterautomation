@@ -22,6 +22,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.sikuli.script.Pattern;
+import org.sikuli.script.Screen;
 
 import com.angular.uisparkster.TestBase.Testbase;
 
@@ -35,7 +37,7 @@ public class TestUtils  extends Testbase {
 	public static long IMPLICIT_WAIT = 95;
 	public static long   setScriptTimeout = 95;
 	
-	
+	public static WebDriverWait wait;
 	 
 	
 	
@@ -137,33 +139,49 @@ public class TestUtils  extends Testbase {
 
 
 
-public static void waitforwebdriver(WebElement element)
+public static void waitforwebdriver_visibilityelement(WebElement element)
 {
 
 	
 
+	  wait = new WebDriverWait(driver, 40);
 
-
-	 WebDriverWait wait = new WebDriverWait(driver, 20);
-
-	 WebElement elemtobeclickable = wait.until(ExpectedConditions.elementToBeClickable(element));
+	// WebElement elemtobeclickable = wait.until(ExpectedConditions.elementToBeClickable(element));
 	 WebElement elemtobevisible = wait.until(ExpectedConditions.visibilityOf(element));
 	
 	 
 	
-	
-
-	   
 	   	
 	
 }
 
 	
 	
+public static void webelementchkthroughsikuli(String png)	
+{
+	
+	Screen screen = new Screen();
+	
+	Pattern pattern = new Pattern(png);
 	
 	
 	
 	
-	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

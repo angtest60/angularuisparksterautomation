@@ -9,7 +9,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.angular.uisparkster.PageActions.HomePage.WidgetsPage;
+import com.angular.uisparkster.PageActions.WidgetsPage;
 import com.angular.uisparkster.TestBase.Testbase;
 import com.angular.uisparkster.TestUtils.TestUtils;
 
@@ -20,7 +20,7 @@ import com.angular.uisparkster.TestUtils.TestUtils;
 public class widgetstest extends Testbase{
 
 
-   WidgetsPage widgetspage;
+	WidgetsPage widgetspage;
    TestUtils testutil;
    
 
@@ -54,7 +54,7 @@ public class widgetstest extends Testbase{
 		 JavascriptExecutor js = (JavascriptExecutor)driver;
 		 js.executeAsyncScript("window.setTimeout(arguments[arguments.length - 1], 2000);");
 		
-		 widgetspage=widgetspage.widgetcheck();
+		// widgetspage=widgetspage.widgetcheck();
 
 
 
