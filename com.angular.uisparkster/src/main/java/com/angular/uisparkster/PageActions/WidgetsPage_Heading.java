@@ -58,7 +58,7 @@ public class WidgetsPage_Heading extends Testbase{
 	   Thread.sleep(2000);
 	   clickinside_Heading.clear();
 	   Thread.sleep(2000);
-	   clickinside_Heading.sendKeys("Welcome To Spicejet");
+	   clickinside_Heading.sendKeys("Sparkster");
    
    }
 }    
