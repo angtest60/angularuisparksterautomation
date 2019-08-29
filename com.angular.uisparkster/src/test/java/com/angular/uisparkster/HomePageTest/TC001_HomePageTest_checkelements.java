@@ -74,7 +74,7 @@ public class TC001_HomePageTest_checkelements  extends Testbase {
 	 {
 		     homepage.addcontainer_click();
 		     homepage.WidgetsIcon_click();
-		     widgetspage.widgets_Textbox_properties();
+		     widgetspage.widgets_Textbox_iconclick();
 		     
 		     
 			
